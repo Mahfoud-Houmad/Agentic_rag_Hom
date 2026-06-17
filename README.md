@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a simple Retrieval-Augmented Generation (RAG) system and extends it with an Agentic RAG workflow.
+This homework implements a simple Retrieval-Augmented Generation (RAG) system and extends it with an Agentic RAG workflow.
 
 The system uses course materials from the LLM Zoomcamp repository (https://github.com/DataTalksClub/llm-zoomcamp) as a knowledge base. User questions are answered by retrieving relevant lesson content and providing it to a language model.
 
@@ -22,7 +22,7 @@ The homework covers the following concepts:
 
 ---
 
-## Project Structure
+## Homework Structure
 
 ```text
 .
@@ -63,7 +63,7 @@ The basic workflow follows three steps:
 search → build_prompt → llm
 ```
 
-The implementation is encapsulated in the `RAGBase` class.
+The implementation is encapsulated in the `RAGPipeline` class.
 
 ---
 
@@ -81,9 +81,7 @@ Documents are split into overlapping chunks before indexing.
 
 The experiment measures:
 
-* Retrieved results
-* Prompt token count
-* Context efficiency
+* Prompt input token count
 
 The chunked approach significantly reduces prompt size while preserving relevant information.
 
@@ -91,7 +89,7 @@ The chunked approach significantly reduces prompt size while preserving relevant
 
 ## Agentic RAG
 
-The project also implements an Agentic RAG workflow.
+The homework also implements an Agentic RAG workflow.
 
 Instead of executing a single retrieval step, the language model can:
 
@@ -124,17 +122,4 @@ The agent performs multiple searches before generating the final response.
 * ToyAIKit
 * Jupyter Notebook
 
----
-
-## Key Takeaways
-
-This homework demonstrates:
-
-* Basic Retrieval-Augmented Generation
-* Retrieval optimization through chunking
-* Tool calling
-* Agentic workflows
-* Comparison between traditional RAG and Agentic RAG
-
-```
 ```
