@@ -21,7 +21,7 @@ Context:
 
 gemini_client = genai.Client()
 
-class RAGBase:
+class RAGPipeline:
     def __init__(self, documents, llm_client= gemini_client, instructions = INSTRUCTIONS, prompt_template = USER_PROMPT_TEMPLATE, model = 'gemini-2.5-flash'):
       self.documents = documents
       self.instructions = instructions
