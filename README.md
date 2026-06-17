@@ -121,5 +121,3 @@ The agent performs multiple searches before generating the final response.
 * MinSearch
 * ToyAIKit
 * Jupyter Notebook
-
-```
